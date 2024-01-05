@@ -1,0 +1,52 @@
+# Archivos y directorios de entorno virtual
+venv/
+title-akas/
+title-basics/
+__pycache__/
+
+# Archivos de configuración local
+*.env
+
+# Archivos de la base de datos SQLite
+db.sqlite3
+
+# Archivos de registro
+*.log
+
+# Archivos generados por IDEs
+.vscode/
+.idea/
+
+# Archivos de compilación y caché
+*.pyc
+*.pyo
+__pycache__/
+
+# Archivos de análisis numérico (puedes ajustar esto según tus necesidades)
+*.csv
+*.tsv
+*.xls
+*.xlsx
+
+# Archivos de modelos de redes neuronales
+*.h5
+*.hdf5
+
+# Carpeta de datos generados
+data/
+
+# Archivos de resultados de análisis
+results/
+
+# Entornos de desarrollo específicos (por ejemplo, Jupyter Notebooks)
+.ipynb_checkpoints/
+
+# Configuración local de Django
+local_settings.py
+
+# Archivos de configuración de AWS (si utilizas servicios de Amazon)
+.aws/
+
+# Archivos generados durante el despliegue
+static/
+media/
