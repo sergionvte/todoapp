@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
 
+{% block action %}
+  <li class="float-left duration-150 hover:text-green-700"><a href="{% url 'index' %}">Go home</a></li>
+{% endblock %}
+
 {% block content %}
-<h1>Register</h1>
-<form action="psot">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Registrarse</button>
-</form>
+<div class="h-screen flex flex-col items-center justify-center">
+  <form action="post" class="bg-gray-100 shadow-lg px-16 py-8 rounded-lg flex flex-col justify center">
+    <h1 class="text-5xl text-center">Create an account!</h1>
+    {% csrf_token %}
+    <button type="submit" class="mt-8 bg-lime-700 text-stone-100 rounded text-center cursor-pointer px-4 py-2 hover:bg-lime-800 hover:shadow-lg duration-300">Registrarse</button>
+  </form>
+</div>
+
 {% endblock %}
