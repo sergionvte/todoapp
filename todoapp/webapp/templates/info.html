@@ -1,6 +1,22 @@
 <div class="h-screen flex items-center justify-center">
-  <div class="content-container flex flex-col">
+  <div class="content-container flex flex-col max-w-2xl">
     <h2 class="text-5xl text-center">Manage your tasks with <b>Todo<b class="text-lime-700">App</b></b></h2>
-    <a class="mt-8 bg-lime-700 text-stone-100 rounded text-center cursor-pointer px-4 py-2 hover:bg-lime-800 hover:shadow-lg duration-300" href="{% url 'register' %}"><b>Try it!</b></a>
+    <p class="mt-6">Discover simplicity in task management with <b>Todo<b class="text-lime-700">App</b></b>. Designed to make your life easier, this minimalist application, built with Django, Tailwind CSS, and backed by MySQL, provides you with a quiet space to organize your tasks efficiently.</p>
+    <h2 class="text-lg font-bold mb-2">Key Features:</h2>
+    <ul class="list-disc pl-4 mb-4">
+      <li><span class="font-bold">Simple Task List:</span> Create and manage your tasks quickly and straightforwardly.</li>
+      <li><span class="font-bold">Swift Registration:</span> Join with just a few clicks and start organizing your days.</li>
+      <li><span class="font-bold">Reliable MySQL:</span> Your information is secure and accessible thanks to our MySQL database.</li>
+      <li><span class="font-bold">Clean Design with Tailwind CSS:</span> Enjoy a clean and functional interface with the simple styles of Tailwind CSS.</li>
+    </ul>
+
+    <h2 class="text-lg font-bold mb-2">Getting Started:</h2>
+    <ol class="list-decimal pl-4 mb-4">
+      <li><span class="font-bold">Sign Up:</span> Create an account in seconds.</li>
+      <li><span class="font-bold">Add Tasks:</span> Simplify your life by organizing your tasks effortlessly.</li>
+      <li><span class="font-bold">Manage Your Day:</span> Mark completed tasks and keep a clear record.</li>
+    </ol>
+    <a class="mt-8 bg-lime-700 text-stone-100 rounded text-center cursor-pointer px-4 py-2 hover:bg-lime-800 hover:shadow-lg duration-300" href="{% url 'register' %}"><b>Start here!</b></a>
+    </div>
   </div>
 </div>

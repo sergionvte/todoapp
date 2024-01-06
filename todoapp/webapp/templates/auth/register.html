@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Register{% endblock %}
+
 {% block action %}
   <li class="float-left duration-150 hover:text-green-700"><a href="{% url 'index' %}">Go home</a></li>
 {% endblock %}
@@ -7,9 +9,12 @@
 {% block content %}
 <div class="h-screen flex flex-col items-center justify-center">
   <form action="post" class="bg-gray-100 shadow-lg px-16 py-8 rounded-lg flex flex-col justify center">
-    <h1 class="text-5xl text-center">Create an account!</h1>
+    <h1 class="text-5xl text-center mb-5">Create an account</h1>
     {% csrf_token %}
-    <button type="submit" class="mt-8 bg-lime-700 text-stone-100 rounded text-center cursor-pointer px-4 py-2 hover:bg-lime-800 hover:shadow-lg duration-300">Registrarse</button>
+    <input type="text" placeholder="Username" class="rounded my-4">
+    <input type="password" placeholder="Password" class="rounded">
+    <input type="password" placeholder="Confirm your password" class="rounded my-4">
+    <button type="submit" class="mt-8 bg-lime-700 text-stone-100 font-bold rounded text-center cursor-pointer px-4 py-2 hover:bg-lime-800 hover:shadow-lg duration-300">Registrarse</button>
   </form>
 </div>
 
