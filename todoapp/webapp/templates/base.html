@@ -9,14 +9,16 @@
   <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-  <nav>
-    <div><span class="logo text-">TodoApp</span></div>
+  <nav class="flex justify-between px-4 py-2 shadow-lg">
+    <div><span class="logo text-neutral-950 text-lg">Todo<b class="text-lime-700">App</b></span></div>
     <div>
       <ul>
         {% block action %}{% endblock %}
       </ul>
     </div>
   </nav>
+  <div class="px-4">
   {% block content %}{% endblock %}
+  </div>
 </body>
 </html>
